@@ -22,7 +22,7 @@ class LINE extends Command {
 
 
     get myBot() {
-        const bot = ['u3b257ce1497b8d24ec3708ba3ed79d46','u236b88bf1eac2b90e848a6198152e647','u763977dab29cbd6fa0cbfa9f159b768b'];
+        const bot = ['u3ad739b6d5301ba665152f5fc3a34484',' u54c65a922d94d61ec9a156001aeebf11','u77e6edb1b7da170871e99655e55f952f','ud61dd364f8094f5868bae34533213fbb'];
         return bot; 
     }
 
@@ -126,31 +126,31 @@ class LINE extends Command {
         let receiver = messages.to;
         let sender = messages.from;
         
-        this.command('Halo', ['halo juga','ini siapa?']);
+        this.command('Bot1', ['Bot1 hadir']);
         this.command('kamu siapa', this.getProfile.bind(this));
-        this.command('.status', `Your Status: ${JSON.stringify(this.stateStatus)}`);
-        this.command(`.left ${payload}`, this.leftGroupByName.bind(this));
-        this.command('.speed', this.getSpeed.bind(this));
-        this.command('.kernel', this.checkKernel.bind(this));
+        this.command('Bot1 Status', `Your Status: ${JSON.stringify(this.stateStatus)}`);
+        this.command(`1left ${payload}`, this.leftGroupByName.bind(this));
+        this.command('Bot1 speed', this.getSpeed.bind(this));
+        this.command('kernel', this.checkKernel.bind(this));
         this.command(`kick ${payload}`, this.OnOff.bind(this));
         this.command(`cancel ${payload}`, this.OnOff.bind(this));
         this.command(`qrp ${payload}`, this.OnOff.bind(this));
-        this.command(`.kickall ${payload}`,this.kickAll.bind(this));
-        this.command(`.cancelall ${payload}`, this.cancelMember.bind(this));
-        this.command(`.set`,this.setReader.bind(this));
-        this.command(`.recheck`,this.rechecks.bind(this));
-        this.command(`.clearall`,this.clearall.bind(this));
-        this.command('.myid',`Your ID: ${messages.from}`)
-        this.command(`.ip ${payload}`,this.checkIP.bind(this))
-        this.command(`.ig ${payload}`,this.checkIG.bind(this))
-        this.command(`.qr ${payload}`,this.qrOpenClose.bind(this))
-        this.command(`.joinqr ${payload}`,this.joinQr.bind(this));
-        this.command(`.spam ${payload}`,this.spamGroup.bind(this));
-        this.command(`.creator`,this.creator.bind(this));
+        this.command(`1dadah ${payload}`,this.kickAll.bind(this));
+        this.command(`1cancel ${payload}`, this.cancelMember.bind(this));
+        this.command(`bot1 set`,this.setReader.bind(this));
+        this.command(`bot1 cek`,this.rechecks.bind(this));
+        this.command(`bot1 clearall`,this.clearall.bind(this));
+        this.command('bot1 myid',`Your ID: ${messages.from}`)
+        this.command(`Modyarr ${payload}`,this.checkIP.bind(this))
+        this.command(`bot1_ig ${payload}`,this.checkIG.bind(this))
+        this.command(`bot1_qr ${payload}`,this.qrOpenClose.bind(this))
+        this.command(`bot1_joinqr ${payload}`,this.joinQr.bind(this));
+        this.command(`bot1_spam ${payload}`,this.spamGroup.bind(this));
+        this.command(`creator`,this.creator.bind(this));
 
-        this.command(`pap ${payload}`,this.searchLocalImage.bind(this));
-        this.command(`.upload ${payload}`,this.prepareUpload.bind(this));
-        this.command(`vn ${payload}`,this.vn.bind(this));
+        this.command(`bot1_pap ${payload}`,this.searchLocalImage.bind(this));
+        this.command(`bot1_upload ${payload}`,this.prepareUpload.bind(this));
+        this.command(`bot1_vn ${payload}`,this.vn.bind(this));
 
         if(messages.contentType == 13) {
             messages.contentType = 0;
