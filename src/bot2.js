@@ -1,5 +1,5 @@
 const LineConnect = require('./connect');
-let line = require('./main.js');
+let line = require('./main2.js');
 let LINE = new line();
 
 const auth = {
